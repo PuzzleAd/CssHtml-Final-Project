@@ -16,6 +16,9 @@
     .camp_768px, .builder_768px, .blogr_768px, .transfer_768px, .photon_768px, .express_768px{
         display: none;
     }
+    .about_768px{
+        display: none;
+    }
 }
 
 @media (width >= 768px){
@@ -266,7 +269,113 @@
         padding-left: 40.5px;
         padding-right: 40.5px
     }
-
+    .laptop_padding{
+        padding-left: 40.5px;
+        padding-right: 40.5px;
+    }
+    .laptop_container{
+        border-radius: 15px;
+    }
+    .laptop_container > img{
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .laptop_text{
+        position: relative;
+        top: -8px;
+        background-image: url(./Home/Images/OurCompany_Images/Laptop_Oval_765px.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -100px;
+        background-position-y: -500px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .laptop_text > h1{
+        color: #FFF;
+        font-family: Jost;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px; /* 100% */
+    }
+    .laptop_text > p{
+        max-width: 573px;
+        color: #FFF;;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+    }
+    .world_class_padding{
+        padding-left: 40.5px;
+        padding-right: 40.5px;
+        margin-top: 120px;
+    }
+    .world_class_container{
+        border-radius: 15px;
+    }
+    .world_class_container > img{
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .world_class_text{
+        padding-top: 68px;
+        padding-bottom: 68px;
+        background-image: url(./Home/Images/OurCompany_Images/World_Class_Oval_768px.svg);
+        background-repeat: no-repeat;
+        background-position-y: -320px;
+        background-position-x: 50px;
+    }
+    .world_class_text > h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px;
+    }
+    .world_class_text > p{
+        max-width: 572px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .about_375px{
+        display: none;
+    }
+    .real_deal_padding{
+        padding-left: 40.5px;
+        padding-right: 40.5px;
+    }
+    .real_deal_container{
+        border-radius: 15px;
+    }
+    .real_deal_container > img{
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .real_deal_text{
+        padding-top: 64px;
+        padding-bottom: 90px;
+        background-image: url(./Home/Images/OurCompany_Images/World_Class_Oval_768px.svg);
+        background-repeat: no-repeat;
+        background-position-y: -320px;
+        background-position-x: 50px;
+    }
+    .real_deal_text > h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px;
+    }
+    .real_deal_text > p{
+        max-width: 572px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
 }
 @media (width < 1024px){
     .mobile_phone_1024px{
@@ -276,6 +385,9 @@
         display: none;
     }
     .webdesign_1024px{
+        display: none;
+    }
+    .about_1024px{
         display: none;
     }
 }
@@ -436,11 +548,117 @@
         background-color: #E7816B;
         transition: 1s;
     }
-    
+    .windows > div:hover h1{
+        color: white;
+    }
+    .windows > div:hover p{
+        color: #FFF;
+    }
     .designs_container_webdesign > div > img:hover{
         opacity: 0.7;
         transition: 1s;
         cursor: pointer;
+     }
+     .about_768px{
+        display: none;
+     }
+     .laptop_padding{
+        padding-left: 120px;
+        padding-right: 120px;
+     }
+     .laptop_container{
+        display: grid;
+        grid-template-columns: 60% 40%;
+
+     }
+     .laptop_container > img{
+        grid-column-start: 2;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 15px;
+        height: 100%;
+        object-fit: cover;
+     }
+     .laptop_text{
+        padding: 135px 95px 135px 95px;
+        background-image: url(./Home/Images/OurCompany_Images/Laptop_Oval_1024px.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 0;
+        background-position-y: -70px;
+        top: 0;
+        grid-row-start: 1;
+        text-align: start;
+        align-items: flex-start;
+        justify-content: center;
+     }
+     .laptop_text > p{
+        max-width: 458px;
+     }
+     .world_class_padding{
+        margin-top: 160px;
+        padding-left: 120px;
+        padding-right: 120px;
+     }
+     .world_class_container{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        background-position-x: 0;
+        background-position-y: 0;
+        background-size: cover;
+     }
+     .world_class_container > img{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        height: 100%;
+        object-fit: cover;
+     }
+     .world_class_text{
+        padding: 154px 45px 154px 95px;
+        text-align: start;
+        align-items: flex-start;
+        justify-content: center;
+     }
+     .world_class_text > p{
+        max-width: 445px;
+     }
+     .about_locations_container{
+        flex-direction: row;
+        padding-left: 150px;
+        padding-right: 150px;
+        gap: 0;
+        justify-content: space-between;
+     }
+     .about_locations_container > div > a > button:hover{
+        background-color: #FFAD9B;
+        transition: 1s;
+        cursor: pointer;
+     }
+     .real_deal_padding{
+        margin-top: 160px;
+        padding-left: 120px;
+        padding-right: 120px;
+     }
+     .real_deal_container{
+        display: grid;
+        grid-template-columns: 60% 40%;
+
+     }
+     .real_deal_container > img{
+        grid-column-start: 2;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 15px;
+        height: 100%;
+        object-fit: cover;
+     }
+     .real_deal_text{
+        padding: 154px 95px 154px 95px;
+        grid-row-start: 1;
+        text-align: start;
+        align-items: flex-start;
+        justify-content: center;
+     }
+     .real_deal_text > p{
+        max-width: 445px;
      }
 }
 
