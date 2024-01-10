@@ -729,3 +729,114 @@ a{
 .united_kingdom_container > iframe{
     width: 100%;
 }
+.input_container{
+    background-color: #E7816B;
+    background-image: url(./Home/Images/Contact_Images/Contact_Oval_375px.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;
+    padding: 72px 20px 72px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.left_side{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.left_side > h1{
+    color: #FFF;
+    font-family: Jost;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 112.5% */
+}
+.left_side > p{
+    max-width: 327px;
+    color: #FFF;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+}
+.right_side{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right_side > .name_rectangle, .email_rectangle, .number_rectangle{
+    margin-bottom: 25px;
+    background: #FFF;
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+}
+.right_side > input{
+    color: #FFF;
+    width: 100%;
+    height: 37px;
+    background-color: transparent;
+    border: none;
+}
+.right_side > input{
+    padding-left: 13.77px;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 173.333% */
+}
+::placeholder{
+    color: #FFF;
+    opacity: 0.5;
+}
+input:focus{
+    outline: none;
+}
+input:focus + .name_rectangle{
+    height: 3px;
+}
+input:focus + .email_rectangle{
+    height: 3px;
+}
+input:focus + .number_rectangle{
+    height: 3px;
+}
+.contact_rectangle{
+    margin-top: 64px;
+    background: #FFF;
+    width: 100%;
+    height: 1px;
+}
+.right_side > button{
+    align-self: center;
+    margin-top: 40px;
+    width: 152px;
+    height: 56px;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    color: #333136;
+    text-align: center;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.contact_footer{
+    position: relative;
+    margin-top: 120px;
+    padding: 253px 24px 64px 24px ;
+    background: #1D1C1E;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 0 64px 0;
+}

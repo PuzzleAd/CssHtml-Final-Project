@@ -434,6 +434,44 @@
         font-weight: 400;
         line-height: 26px;
     }
+    .contact_footer{
+        padding: 87px 40.5px 80px 40.5px;
+    }
+    .input_padding{
+        padding-left: 40.5px;
+        padding-right: 40.5px;
+    }
+    .input_container{
+        padding: 71px 58px 71px 58px;
+        border-radius: 15px;
+        background-image: url(./Home/Images/Contact_Images/Contact_Oval_768px.svg);
+        background-repeat: no-repeat;
+        background-position-x: left;
+    }
+    .left_side{
+        align-items: flex-start;
+        text-align: left;
+    }
+    .left_side > h1{
+        color: #FFF;
+        font-family: Jost;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px; /* 100% */
+    }
+    .left_side > p{
+        max-width: 573px;
+        color: #FFF;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+    }
+    .right_side > button{
+        align-self: flex-end;
+    }
 }
 @media (width < 1024px){
     .mobile_phone_1024px{
@@ -745,7 +783,33 @@
     .australia_container{
         grid-template-columns: 35% 65%;
     }
-    
+    .input_padding{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .input_container{
+        background-position-x: -200px;
+        background-position-y: -200px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 55px 96px 54px 96px;
+    }
+    .right_side{
+        width: 50%;
+    }
+    .right_side > p{
+        max-width: 445px;
+    }
+    .contact_footer{
+        margin-top: 160px;
+    }
+    .container1{
+        background-image: url(./Home/Images/Contact_Images/contact_container_oval.svg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 850px;
+    }
 }
 
 
