@@ -376,6 +376,64 @@
         font-weight: 400;
         line-height: 26px;
     }
+    .canada_padding, .australia_padding, .united_kingdom_padding{
+        padding-left: 40.5px;
+        padding-right: 40.5px;
+    }
+    .canada_container > iframe{
+        border-radius: 15px;
+    }
+    .australia_container > iframe{
+        border-radius: 15px;
+    }
+    .united_kingdom_container > iframe{
+        border-radius: 15px;
+    }
+    .canada_container, .australia_container, .united_kingdom_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .locations_text{
+        top: 0;
+        border-radius: 15px;
+        background-image: url(./Home/Images/Location_Images/Locations_Oval_768px.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 88px;
+        padding-bottom: 88px;
+        padding-left: 75px;
+        align-items: flex-start;
+    }
+    .locations_text > h1{
+        color: #E7816B;
+        font-family: Jost;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px; /* 120% */
+    }
+    .paragraphs{
+        text-align: left;
+        flex-direction: row;
+        gap: 100px;
+    }
+    .paragraphs > div > h6{
+        color: #333136;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px; /* 162.5% */
+    }
+    .paragraphs > div > p{
+        color: #333136;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
 }
 @media (width < 1024px){
     .mobile_phone_1024px{
@@ -641,6 +699,7 @@
      .real_deal_container{
         display: grid;
         grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(1, );
 
      }
      .real_deal_container > img{
@@ -660,6 +719,33 @@
      .real_deal_text > p{
         max-width: 445px;
      }
+     .canada_padding, .australia_padding, .united_kingdom_padding{
+        padding-left: 120px;
+        padding-right: 120px;
+     }
+     .canada_container, .united_kingdom_container{
+        grid-template-columns: 65% 35%;
+     }
+    .canada_container > iframe{
+        grid-column-start: 2;
+    }
+    .canada_container > .locations_text{
+        grid-row-start: 1;
+    }
+    .united_kingdom_container > iframe{
+        grid-column-start: 2;
+    }
+    .united_kingdom_container > .locations_text{
+        grid-row-start: 1;
+    }
+    .locations_text{
+        padding: 0 0 0 95px;
+        justify-content: center;
+    }
+    .australia_container{
+        grid-template-columns: 35% 65%;
+    }
+    
 }
 
 
