@@ -472,6 +472,9 @@
     .right_side > button{
         align-self: flex-end;
     }
+    .burger_menu{
+        display: none;
+    }
 }
 @media (width < 1024px){
     .mobile_phone_1024px{
@@ -809,6 +812,12 @@
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: 850px;
+    }
+    .right_side > button:hover{
+        background: #FFAD9B;
+        color: white;
+        transition: 1s;
+        cursor: pointer;
     }
 }
 
